@@ -1,0 +1,822 @@
+<!--
+  © 2026 Livinkumar S (Saala)
+  All rights reserved.
+
+  This website and its source code are the intellectual property of Livinkumar S.
+  Unauthorized copying, reproduction, or distribution of this code, in whole or in part, is strictly prohibited.
+-->
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KarurThreads | Premium Hospital Bedsheets & Pillow Covers</title>
+    <meta name="description" content="Leading wholesale supplier of premium hospital bedsheets and pillow covers from Karur, Tamil Nadu.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo-wrap">
+                <span class="loader-logo-text">KarurThreads</span>
+            </div>
+            <div class="loader-shimmer"></div>
+        </div>
+        <div class="loader-progress"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="./assets/Logo/Logo.png" alt="KarurThreads" class="logo-image">
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active" data-section="hero">
+                    <span class="nav-link-text">Home</span>
+                    <span class="nav-link-line"></span>
+                </a></li>
+                <li><a href="#about" class="nav-link" data-section="about">
+                    <span class="nav-link-text">About Us</span>
+                    <span class="nav-link-line"></span>
+                </a></li>
+                <li><a href="#products" class="nav-link" data-section="products">
+                    <span class="nav-link-text">Products</span>
+                    <span class="nav-link-line"></span>
+                </a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">
+                    <span class="nav-link-text">Contact Us</span>
+                    <span class="nav-link-line"></span>
+                </a></li>
+                <li><a href="./dummyCatelog.pdf" download id="catIn" class="nav-link btn btn-primary nav-cta">
+                    <span class="btn-text">Download Catalog</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                    </svg>
+                </a></li>
+
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="./dummyCatelog.pdf" download class="nav-link btn btn-primary nav-cta" id="catOut">
+                    <span class="btn-text">Download Catalog</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-image-layer"></div>
+            <div class="hero-gradient-left"></div>
+            <div class="hero-gradient-right"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">Premium Hospital Textiles</span>
+                <span class="eyebrow-line"></span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="title-line" data-text="Premium Hospital">Premium Hospital</span>
+                <span class="title-line" data-text="Bedsheets &">Bedsheets &</span>
+                <span class="title-line gold" data-text="Pillow Covers">Pillow Covers</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Leading wholesale supplier from Karur, Tamil Nadu. Uncompromised quality, competitive pricing, and reliable service for healthcare facilities across India.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary btn-lg">
+                    <span class="btn-text">View Products</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline btn-lg">
+                    <span class="btn-text">Get Quote</span>
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Healthcare Partners</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">38</span>
+                    <span class="stat-label">Unique Designs</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-bg-accent"></div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">Built on Excellence</h2>
+                <p class="section-subtitle">Every thread tells a story of quality craftsmanship</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-feature="1">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Uncompromised Quality</h3>
+                    <p class="feature-desc">We prioritize quality at every stage—from fabric selection to final finishing. Our products undergo rigorous quality checks to meet healthcare standards.</p>
+                    <div class="feature-number">01</div>
+                </div>
+
+                <div class="feature-card" data-feature="2">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Competitive Pricing</h3>
+                    <p class="feature-desc">Factory-direct pricing that helps you maintain healthy profit margins without compromising on quality. Perfect for bulk buyers.</p>
+                    <div class="feature-number">02</div>
+                </div>
+
+                <div class="feature-card" data-feature="3">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Custom Solutions</h3>
+                    <p class="feature-desc">Looking for specific colors, sizes, or patterns? We offer flexible customization to meet your brand or market needs in bulk quantities.</p>
+                    <div class="feature-number">03</div>
+                </div>
+
+                <div class="feature-card" data-feature="4">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Timely Delivery</h3>
+                    <p class="feature-desc">Our streamlined production process and reliable logistics ensure that your orders are delivered on schedule, every time.</p>
+                    <div class="feature-number">04</div>
+                </div>
+
+                <div class="feature-card" data-feature="5">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="7" height="7"/>
+                            <rect x="14" y="3" width="7" height="7"/>
+                            <rect x="14" y="14" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Wide Range</h3>
+                    <p class="feature-desc">Complete home textile solutions under one roof - from bedsheets and pillow covers to curtains and table linens.</p>
+                    <div class="feature-number">05</div>
+                </div>
+
+                <div class="feature-card" data-feature="6">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Trusted Partner</h3>
+                    <p class="feature-desc">Long-standing relationships with wholesalers, exporters, and healthcare facilities through transparent communication.</p>
+                    <div class="feature-number">06</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-visual">
+            <div class="about-image-main">
+                <img src="./assets/about/1.jpeg" alt="Premium hospital linens" class="about-img">
+                <div class="about-image-overlay"></div>
+            </div>
+            <div class="about-image-accent">
+                <img src="./assets/about/2.jpg" alt="Textile craftsmanship" class="accent-img">
+                <div class="accent-overlay"></div>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <span class="section-tag">Our Story</span>
+            <h2 class="section-title">The KarurThreads Difference</h2>
+
+            <p class="about-lead">
+                Located in the textile hub of India — Karur, Tamil Nadu — we've spent over 15 years perfecting the art of hospital textile manufacturing.
+            </p>
+
+            <div class="about-cards">
+                <div class="about-card" data-card="1">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 8v4l3 3"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h4>Our Mission</h4>
+                        <p>To provide healthcare facilities with premium quality bedsheets and pillow covers that combine comfort, durability, and hygiene standards.</p>
+                    </div>
+                </div>
+
+                <div class="about-card" data-card="2">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/>
+                            <path d="M12 22V12M2 7l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h4>Our Vision</h4>
+                        <p>To become the most trusted name in hospital textiles across India, known for exceptional quality and innovative solutions.</p>
+                    </div>
+                </div>
+
+                <div class="about-card" data-card="3">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h4>Our Values</h4>
+                        <p>Quality excellence, customer satisfaction, ethical practices, and building long-term partnerships with every client.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose" id="whyChoose">
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-content">
+                    <span class="section-tag">Our Promise</span>
+                    <h2 class="section-title">Why KarurThreads</h2>
+                    <p class="why-desc">
+                        From the bustling textile markets of Karur to hospitals across India, we deliver excellence in every thread.
+                    </p>
+
+                    <div class="checklist">
+                        <div class="checklist-item" data-item="1">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <span>Located in Karur — India's textile capital</span>
+                        </div>
+                        <div class="checklist-item" data-item="2">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <span>Specialized expertise in hospital-grade textiles</span>
+                        </div>
+                        <div class="checklist-item" data-item="3">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <span>State-of-the-art quality control processes</span>
+                        </div>
+                        <div class="checklist-item" data-item="4">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <span>Flexible minimum order quantities</span>
+                        </div>
+                        <div class="checklist-item" data-item="5">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <span>Pan-India delivery network</span>
+                        </div>
+                        <div class="checklist-item" data-item="6">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <span>24/7 dedicated customer support</span>
+                        </div>
+                        <div class="checklist-item" data-item="7">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <span>Competitive wholesale pricing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-visual">
+                    <div class="why-image-container">
+                        <img src="https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?w=600&h=800&fit=crop&q=80" alt="Hospital textile quality" class="why-image">
+                        <div class="why-image-overlay"></div>
+                        <div class="why-badge">
+                            <span class="badge-number">38+</span>
+                            <span class="badge-text">Designs Available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">Our Collection</span>
+                <h2 class="section-title">Premium Product Range</h2>
+                <p class="section-subtitle">Engineered for healthcare excellence</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-product="1">
+                    <div class="product-image">
+                        <img src="./assets/Services/1.png" alt="Hospital Bedsheets" class="product-img">
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <a href="#contact"><button class="overlay-text">Know More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Hospital Bedsheets</h3>
+                        <div class="product-meta">
+                            <span class="meta-item">100% Cotton</span>
+                            <span class="meta-divider">•</span>
+                            <span class="meta-item">200 TC Thread</span>
+                        </div>
+                        <ul class="product-details">
+                            <li><strong>Sizes:</strong> 60" x 90"</li>
+                            <li><strong>Colors:</strong> White, Blue, Green</li>
+                            <li><strong>MOQ:</strong> 100 pieces</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="2">
+                    <div class="product-image">
+                        <img src="./assets/Services/2.png" alt="Pillow Covers" class="product-img">
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <a href="#contact"><button class="overlay-text">Know More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Pillow Covers</h3>
+                        <div class="product-meta">
+                            <span class="meta-item">Hypoallergenic</span>
+                            <span class="meta-divider">•</span>
+                            <span class="meta-item">Machine Washable</span>
+                        </div>
+                        <ul class="product-details">
+                            <li><strong>Sizes:</strong> 18" x 27"</li>
+                            <li><strong>Colors:</strong> White, Blue, Green</li>
+                            <li><strong>MOQ:</strong> 100 pieces</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="3">
+                    <div class="product-image">
+                        <img src="./assets/Services/3.png" alt="Bedsheet Sets" class="product-img">
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <a href="#contact"><button class="overlay-text">Know More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Bedsheet Sets</h3>
+                        <div class="product-meta">
+                            <span class="meta-item">1 Bedsheet + 1 Pillow</span>
+                            <span class="meta-divider">•</span>
+                            <span class="meta-item">Premium Cotton</span>
+                        </div>
+                        <ul class="product-details">
+                            <li><strong>Includes:</strong> Complete set</li>
+                            <li><strong>Packaging:</strong> Individual polybags</li>
+                            <li><strong>MOQ:</strong> 50 sets</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="4">
+                    <div class="product-image">
+                        <img src="./assets/Services/4.png" alt="Medical Grade Linens" class="product-img">
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <a href="#contact"><button class="overlay-text">Know More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Medical Grade Linens</h3>
+                        <div class="product-meta">
+                            <span class="meta-item">ICU/OT Grade</span>
+                            <span class="meta-divider">•</span>
+                            <span class="meta-item">Hospital Certified</span>
+                        </div>
+                        <ul class="product-details">
+                            <li><strong>Feature:</strong> Ultra-soft, Lint-free</li>
+                            <li><strong>Packaging:</strong> Sterile available</li>
+                            <li><strong>MOQ:</strong> 200 pieces</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="5">
+                    <div class="product-image">
+                        <img src="./assets/Services/5.png" alt="Custom Products" class="product-img">
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <a href="#contact"><button class="overlay-text">Know More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Custom Products</h3>
+                        <div class="product-meta">
+                            <span class="meta-item">Size & Color Custom</span>
+                            <span class="meta-divider">•</span>
+                            <span class="meta-item">Logo Available</span>
+                        </div>
+                        <ul class="product-details">
+                            <li><strong>Options:</strong> Embroidery, Printing</li>
+                            <li><strong>Lead Time:</strong> 15-20 days</li>
+                            <li><strong>MOQ:</strong> 500 pieces</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product="6">
+                    <div class="product-image">
+                        <img src="./assets/Services/6.jpg">
+                        <div class="product-overlay">
+                            <div class="overlay-content">
+                                <a href="#contact"><button class="overlay-text">Know More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Bulk Orders</h3>
+                        <div class="product-meta">
+                            <span class="meta-item">Volume Pricing</span>
+                            <span class="meta-divider">•</span>
+                            <span class="meta-item">Dedicated Manager</span>
+                        </div>
+                        <ul class="product-details">
+                            <li><strong>Minimum:</strong> 100 pieces</li>
+                            <li><strong>Delivery:</strong> Pan-India</li>
+                            <li><strong>Payment:</strong> Flexible terms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-actions">
+                <a href="./dummyCatelog.pdf" download class="btn btn-primary btn-lg">
+                    <span class="btn-text">Download Catalog</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline btn-lg">
+                    <span class="btn-text">Request Quote</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="cta">
+        <div class="cta-bg">
+            <div class="cta-image-layer">
+                <img src="./assets/cta1.jpg" alt="Premium hospital textiles">
+            </div>
+            <div class="cta-overlay"></div>
+            <div class="cta-gradient"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <span class="section-tag light">Let's Connect</span>
+                <h2 class="cta-title">Ready to partner with KarurThreads?</h2>
+                <p class="cta-subtitle">Experience the difference of premium hospital textiles. Let's discuss your requirements.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <span class="btn-text">Request Quote</span>
+                    </a>
+                    <a href="tel:+919433046645" class="btn btn-outline-light btn-lg">
+                        <span class="btn-text">Contact Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">For wholesale inquiries, custom orders, or any questions</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card" data-info="1">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Address</h4>
+                            <p>143 A/ Mahatma Gandhi Road<br>Karur, Tamil Nadu 639002<br>India</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card" data-info="2">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919433046645">+91 94330 46645</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card" data-info="3">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:karurthreads@gmail.com">karurthreads@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card" data-info="4">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <div class="info-content">
+                            <h4>Business Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: 10:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-header">
+                            <h3>Send us a Message</h3>
+                            <p>We typically respond within 24 hours</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="fullName" name="fullName" required placeholder=" ">
+                                <label for="fullName">Full Name *</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Email Address *</label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder=" ">
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="company" name="company" placeholder=" ">
+                                <label for="company">Company Name</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="productInterest" name="productInterest" required>
+                                <option value="" disabled selected></option>
+                                <option value="hospital-bedsheets">Hospital Bedsheets</option>
+                                <option value="pillow-covers">Pillow Covers</option>
+                                <option value="bedsheet-sets">Bedsheet Sets</option>
+                                <option value="medical-grade">Medical Grade Linens</option>
+                                <option value="custom">Custom Products</option>
+                                <option value="bulk">Bulk Orders</option>
+                            </select>
+                            <label for="productInterest">Product Interest *</label>
+                        </div>
+
+                        <div class="form-group textarea-group">
+                            <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Your Message *</label>
+                            <span class="form-hint">Please share your requirements, quantity needed, and any specific details...</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                </svg>
+                            </span>
+                            <span class="btn-success">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="contact-map">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.084592!2d78.0822!3d10.9601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDU3JzM2LjAiTiA3OMKwMDknMDYuOCJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SG Software Solutions office location map - KBS Arcade, Covai Road, Karur, Tamil Nadu">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <img src="./assets/Logo/Logo.png" alt="KarurThreads" class="logo-image">
+                        </a>
+                        <p class="footer-tagline">Premium wholesale supplier of hospital bedsheets and pillow covers from Karur, Tamil Nadu.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                    <rect x="2" y="9" width="4" height="12"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="#products">Hospital Bedsheets</a></li>
+                            <li><a href="#products">Pillow Covers</a></li>
+                            <li><a href="#products">Bedsheet Sets</a></li>
+                            <li><a href="#products">Medical Grade Linens</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h4>Contact Info</h4>
+                        <address>
+                            <p>143 A/ Mahatma Gandhi Road</p>
+                            <p>Karur, Tamil Nadu 639002</p>
+                            <p><a href="tel:+919433046645">+91 94330 46645</a></p>
+                            <p><a href="mailto:karurthreads@gmail.com">karurthreads@gmail.com</a></p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 KarurThreads. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919433046645" target="_blank" class="whatsapp-float" id="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-pulse"></span>
+    </a>
+
+    <!-- Catalog Download Modal -->
+    <div class="modal-overlay" id="catalogModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+            </div>
+            <h3 class="modal-title">Download Catalog</h3>
+            <p class="modal-message">Catalog download will begin shortly. For immediate access, please contact us at <a href="tel:+919433046645">+91 94330 46645</a> or <a href="mailto:karurthreads@gmail.com">karurthreads@gmail.com</a></p>
+            <button class="btn btn-primary btn-lg modal-btn" id="catalogModalOk">
+                <span class="btn-text">OK</span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
